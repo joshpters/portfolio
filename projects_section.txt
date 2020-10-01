@@ -1,0 +1,81 @@
+<section id="projects" class="section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row projects text-center">
+                    <div class="col-lg" id="project-one">
+                        <div class="section-title">
+                            <h2 class="section-title">PORTFOLIO</h2>
+                            <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg" id="project-two">
+                        <!--<h2 class="section-title">PROJECT 1</h2>-->
+                        <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                        </div>
+                    </div>
+
+                <div class="row justify-content-center align-self-center projects text-center">
+                    <div class="col-lg" id="project-three">
+                        <!--<h2>PROJECT 2</h2>-->
+                        <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                    </div>
+                    <div class="col-lg" id="project-four">
+                        <!--<h2>PROJECT 3</h2>-->
+                        <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+		
+		
+		
+		
+-----------------------------------------------
+.col-lg{
+    min-height:500px;
+}
+
+#project-one {
+    background-color: #202529;
+    color: white;
+}
+
+#project-one h2{
+    margin-top: 150px;
+    color:white;
+}
+
+
+#project-two {
+    background-color: #fcd088;
+}
+
+#project-two img {
+    width: 80%;
+    padding: 0;
+    transform: rotate(-15deg) skew(25deg) scale(0.7);
+    filter: drop-shadow(-20px 20px 20px #45505b);
+}
+
+#project-three {
+    background-color: #ddae76;
+}
+
+#project-three img {
+    width: 80%;
+    padding: 0;
+    transform: rotate(-15deg) skew(25deg) scale(0.7);
+    filter: drop-shadow(-20px 20px 20px #45505b);
+}
+
+#project-four {
+    background-color: #cd9e6a;
+}
+
+#project-four img {
+    width: 80%;
+    padding: 0;
+    transform: rotate(-15deg) skew(25deg) scale(0.7);
+    filter: drop-shadow(-20px 20px 20px #45505b);
+}

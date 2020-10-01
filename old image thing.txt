@@ -1,0 +1,75 @@
+CSS------------------------------
+.app-title {
+    
+}
+
+.portfolio-image {
+    /*margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;*/
+    /*justify-content: center;
+    align-items: center;*/
+    /*background: #fcd088;*/
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 340px;
+    width: 600px;
+    transform: rotate(-15deg) skew(25deg) scale(0.7);
+    transition: 0.5s;
+    border: 1px solid #fcd088;
+    background-color: #fcd088;
+    
+}
+
+.portfolio-image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.portfolio-image:hover img:nth-child(4){
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+.portfolio-image:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+.portfolio-image:hover img:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+
+.portfolio-image:hover img:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: 0.4;
+}
+-----------------------------------------------------------
+HTML
+-----------------------------------------------------------
+<div class="row">
+                    <div class="col-lg">
+                        <h3 class="text-center app-title">Wasp-X</h3>
+                        <div class="portfolio-image">
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <h3 class="text-center app-title">Bill-X</h3>
+                        <div class="portfolio-image">
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                            <img src="/Images/Web-application-vs-website.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>

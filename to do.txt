@@ -1,0 +1,7 @@
+TO DO
+>>> ADD BLOG SECTION
+>>> CUSTOMIZE NORMAL PORTFOLIO SECTION
+>>> ADD FULL PAGE POP UP
+>>> ADD IN ACTUAL DETAILS
+
+Idea: like the demo except with the different color backgrounds from the astrid theme. It'll work.
