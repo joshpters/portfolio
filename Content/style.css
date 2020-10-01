@@ -168,6 +168,72 @@ a.custom-button:hover {
 }
 
 /*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+img.modal-preview-image {
+    width: 100%;
+    transform: rotate(-15deg) skew(25deg) scale(0.7);
+}
+
+#save-button {
+    background-color: #2596F5;
+    border: 2px solid #fcd088;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.modal-dialog {
+    overflow-y: initial !important
+}
+
+.modal-title {
+    color: #202529;
+}
+
+.modal-header {
+    background-color: #fcd088;
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    background-color: #fcd088;
+    border-top: 0 none;
+}
+
+.modal-body {
+    background-color: #202529;
+    border-left: 12px solid #fcd088;
+    border-right: 12px solid #fcd088;
+/*    height: 80vh;*/
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-body p{
+    line-height: 2;
+}
+
+.model-body h6 {
+    font-weight: bold;
+}
+
+.modal-full{
+    min-width:90%;
+/*    height:70%;*/
+}
+
+.modal-full .modal-content {
+    /*height: 80%;*/
+    color: white;
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
         /* Desktop Navigation */
@@ -367,7 +433,7 @@ section#facts h2 {
 }
 
 section#portfolio {
-    background-color: #202529;
+    background-color: #343d45;
     /*background-color: #fcd088;*/
     width: 100%;
     color: white;
@@ -633,7 +699,7 @@ section#portfolio ul {
 }
 
 .portfolio-wrap {
-    /*transform: rotate(-10deg) skew(15deg) scale(1);*/
+    /*transform: rotate(-5deg) skew(5deg) scale(1);*/
     min-height: 300px;
     /*max-width:250px;
     fill: white;*/
@@ -751,6 +817,7 @@ section#portfolio ul {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
+  cursor:pointer;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -990,12 +1057,21 @@ height: 100px;*/
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+section#services {
+    background: #242a30;
+    color:white;
+}
+
+section#services h2{
+    color:white;
+}
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  /*padding: 70px 20px 80px 20px;*/
   transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  /*background: #fff;*/
+  /*box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);*/
 }
 
 .services .icon-box .icon {
@@ -1033,7 +1109,7 @@ height: 100px;*/
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: white;
   transition: ease-in-out 0.3s;
 }
 
@@ -1044,8 +1120,8 @@ height: 100px;*/
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  /*border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);*/
 }
 
 .services .iconbox-blue i {
@@ -1352,6 +1428,8 @@ height: 100px;*/
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+
 .portfolio-details {
   padding: 40px 0;
 }
