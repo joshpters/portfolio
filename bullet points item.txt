@@ -1,0 +1,14 @@
+<div class="row text-center">
+                    <div class="col-lg-6 text-lg-right">
+                        <ul>
+                            <li><i class="icofont-rounded-right"></i> <strong>ASP.NET Backend</strong></li>
+                            <li><i class="icofont-rounded-right"></i> <strong>Deployed Using Containers</strong></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-lg-left">
+                        <ul>
+                            <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>
+                            <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
+                        </ul>
+                    </div>
+                </div>

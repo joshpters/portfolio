@@ -626,6 +626,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 
+section#portfolio ul {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+}
+
 .portfolio-wrap {
     /*transform: rotate(-10deg) skew(15deg) scale(1);*/
     min-height: 300px;
