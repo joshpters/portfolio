@@ -1221,6 +1221,10 @@ section#services h2{
   position: relative;
 }
 
+.services img{
+    max-width: 80%;
+}
+
 /*.services .icon-box .icon svg {
   position: absolute;
   top: 0;
