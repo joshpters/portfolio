@@ -1,0 +1,8 @@
+Sunset Hills uses simple ideas to pan through an array and determine the highest seen value while holding that number for future comparisons.
+
+Created a fully functional MVC bug tracker web application from scratch. Handled secure file upload functionality for approved file types. Implemented code first database with user- and role-level security. Database interaction done through LINQ to Entity framework 
+
+Created a fully functioning WebAPI car finder web application from scratch. Composed dynamic, responsive front-end design using AngularJS, HTML5, and Twitter Bootstrap. Accessed NHTSA’s car recalls database using provided WebAPI to show car recalls. Included images using Bing’s WebAPI
+Created a fully functional financial portal web application using WebAPI and AngularJS technologies. Implemented token-based authorization and security. Managed routing using UI.route. Accessed database through combination of stored procedures written in SQL and LINQ to Entity framework
+
+Created a personal portfolio website using C#, MVC5, and JavaScript. Design and developed front-end using HTML5, Twitter Bootstrap. Presented programming exercises and code snippets using JavaScript.
