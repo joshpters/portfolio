@@ -1,5 +1,6 @@
 TO DO
 
+https://stackoverflow.com/questions/17461682/calling-a-function-on-bootstrap-modal-open
 >>> add link to view project to modal
 >>> full form functionality
 >>> rearange menu

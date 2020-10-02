@@ -173,7 +173,15 @@ a.custom-button:hover {
 
 img.modal-preview-image {
     width: 100%;
-    transform: rotate(-15deg) skew(25deg) scale(0.7);
+    /*transform: rotate(-15deg) skew(25deg) scale(0.7);*/
+    /*filter: drop-shadow(-20px 20px 20px #fcd088);*/
+    border: 1px solid #fcd088;
+}
+
+img.modal-preview-image:hover {
+    transform: none;
+    box-shadow: none;
+    transition: 1s;
 }
 
 #save-button {
