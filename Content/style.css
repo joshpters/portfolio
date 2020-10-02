@@ -56,17 +56,17 @@ a.custom-button:hover {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  background: #fcd088;
-  color: #fff;
-  transition: display 0.5s ease-in-out;
-  z-index: 99999;
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    right: 15px;
+    bottom: 15px;
+    background: #fcd088;
+    color: #202529;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
 }
 
 .back-to-top i {
@@ -242,22 +242,23 @@ width: 525px;
 }*/
 
 .modal-confirm .btn, .modal-confirm .btn:active {
-    color: #fff;
-    border-radius: 4px;
+    color: #fcd088;
+    /*    border-radius: 4px;*/
     /*background: #eeb711 !important;*/
-    background: #fcd088 !important;
+    background: #202529 !important;
     text-decoration: none;
     transition: all 0.4s;
     line-height: normal;
-    border-radius: 30px;
+    /*    border-radius: 30px;*/
     margin-top: 10px;
     padding: 6px 20px;
-    border: none;
+    border: 2px solid #fcd088;
 }
 
 .modal-confirm .btn:hover, .modal-confirm .btn:focus {
-    background: #eda645 !important;
-    outline: none;
+    background: #fcd088 !important;
+    color: #202529;
+    border: 2px solid #fcd088 !important;
 }
 
 .modal-confirm .btn span {
@@ -294,15 +295,15 @@ img.modal-preview-image:hover {
     transition: 1s;
 }
 
-#bugModal .modal-body .description {
+.project-modal .modal-body .description {
     padding: 20px;
 }
 
-#bugModal .modal-body .row {
+.project-modal .modal-body .row {
     padding: 20px;
 }
 
-#bugModal .modal-body ul {
+.project-modal .modal-body ul {
     list-style: none;
 }
 
@@ -313,25 +314,25 @@ img.modal-preview-image:hover {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-#bugModal .modal-dialog {
+.project-modal .modal-dialog {
     overflow-y: initial !important
 }
 
-#bugModal .modal-title {
+.project-modal .modal-title {
     color: #202529;
 }
 
-#bugModal .modal-header {
+.project-modal .modal-header {
     background-color: #fcd088;
     border-bottom: 0 none;
 }
 
-#bugModal .modal-footer {
+.project-modal .modal-footer {
     background-color: #fcd088;
     border-top: 0 none;
 }
 
-#bugModal .modal-body {
+.project-modal .modal-body {
     background-color: #202529;
     border-left: 12px solid #fcd088;
     border-right: 12px solid #fcd088;
@@ -341,24 +342,24 @@ img.modal-preview-image:hover {
     scrollbar-width: none; /* Firefox */
 }
 
-#bugModal .modal-body::-webkit-scrollbar {
+.project-modal .modal-body::-webkit-scrollbar {
     display: none;
 }
 
-#bugModal .modal-body p {
+.project-modal .modal-body p {
     line-height: 2;
 }
 
-#bugModal .model-body h6 {
+.project-modal .model-body h6 {
     font-weight: bold;
 }
 
-#bugModal .modal-full {
+.project-modal .modal-full {
     min-width: 90%;
     /*    height:70%;*/
 }
 
-#bugModal .modal-full .modal-content {
+.project-modal .modal-full .modal-content {
     /*height: 80%;*/
     color: white;
 }
@@ -1060,9 +1061,13 @@ border-left: 3px solid #d7dce1;*/
     box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
 }
 
-.challenges img{
-    max-width: 20%;
+@media (max-width: 767px) {
+    .challenges img {
+        max-width: 20%;
+    }
 }
+
+
 
 .challenges .icon-box .icon {
     margin: 0 auto;
@@ -1225,9 +1230,13 @@ section#services h2{
   position: relative;
 }
 
-.services img{
-    max-width: 20%;
+@media (max-width: 767px) {
+    .services img {
+        max-width: 20%;
+    }
 }
+
+
 
 /*.services .icon-box .icon svg {
   position: absolute;
@@ -1537,16 +1546,17 @@ section#services h2{
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #fcd088;
-  border: 0;
+  background: transparent;
+/*  border-radius: 0;*/
+  border: 2px solid #fcd088;
   padding: 10px 35px;
-  color: #fff;
+  color: #fcd088;
   transition: 0.4s;
-  border-radius: 50px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+    background: #fcd088;
+    color: #202529;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1666,7 +1676,7 @@ section#services h2{
     font-size: 18px;
     display: inline-block;
     background: #fcd088;
-    color: #fff;
+    color: #242a30;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
