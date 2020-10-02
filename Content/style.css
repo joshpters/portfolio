@@ -167,6 +167,116 @@ a.custom-button:hover {
     }
 }
 
+/*-------------------------------------------------------------
+    Message Sent Modal Styles
+----------------------------------------------------------------*/
+
+
+/*.modal-confirm {
+color: #434e65;
+width: 525px;
+}
+*/
+.modal-confirm .modal-content {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #202529;
+    color: white;
+}
+
+.modal-confirm .modal-header {
+    background: #fcd088;
+    border-bottom: none;
+    position: relative;
+    text-align: center;
+    margin: -20px -20px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 35px;
+}
+
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.modal-confirm .form-control, .modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-confirm .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    text-shadow: none;
+    opacity: 0.5;
+}
+
+.modal-confirm .close:hover {
+    opacity: 0.8;
+}
+
+.modal-confirm .icon-box {
+    color: #fff;
+    width: 95px;
+    height: 95px;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 9;
+    border: 5px solid #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-confirm .icon-box i {
+    font-size: 64px;
+    margin: -4px 0 0 -4px;
+}
+
+/*.modal-confirm.modal-dialog {
+    margin-top: 80px;
+}*/
+
+.modal-confirm .btn, .modal-confirm .btn:active {
+    color: #fff;
+    border-radius: 4px;
+    /*background: #eeb711 !important;*/
+    background: #fcd088 !important;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 6px 20px;
+    border: none;
+}
+
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+    background: #eda645 !important;
+    outline: none;
+}
+
+.modal-confirm .btn span {
+    margin: 1px 3px 0;
+    float: left;
+}
+
+.modal-confirm .btn i {
+    margin-left: 1px;
+    font-size: 20px;
+    float: right;
+}
+
+.trigger-btn {
+display: inline-block;
+margin: 100px auto;
+}
+
+
 /*--------------------------------------------------------------
 # Modal
 --------------------------------------------------------------*/
@@ -184,15 +294,15 @@ img.modal-preview-image:hover {
     transition: 1s;
 }
 
-.modal-body .description{
-    padding:20px;
-}
-
-.modal-body .row {
+#bugModal .modal-body .description {
     padding: 20px;
 }
 
-.modal-body ul{
+#bugModal .modal-body .row {
+    padding: 20px;
+}
+
+#bugModal .modal-body ul {
     list-style: none;
 }
 
@@ -203,52 +313,52 @@ img.modal-preview-image:hover {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-.modal-dialog {
+#bugModal .modal-dialog {
     overflow-y: initial !important
 }
 
-.modal-title {
+#bugModal .modal-title {
     color: #202529;
 }
 
-.modal-header {
+#bugModal .modal-header {
     background-color: #fcd088;
     border-bottom: 0 none;
 }
 
-.modal-footer {
+#bugModal .modal-footer {
     background-color: #fcd088;
     border-top: 0 none;
 }
 
-.modal-body {
+#bugModal .modal-body {
     background-color: #202529;
     border-left: 12px solid #fcd088;
     border-right: 12px solid #fcd088;
-/*    height: 80vh;*/
+    /*    height: 80vh;*/
     overflow-y: auto;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
 
-.modal-body::-webkit-scrollbar {
+#bugModal .modal-body::-webkit-scrollbar {
     display: none;
 }
 
-.modal-body p{
+#bugModal .modal-body p {
     line-height: 2;
 }
 
-.model-body h6 {
+#bugModal .model-body h6 {
     font-weight: bold;
 }
 
-.modal-full{
-    min-width:90%;
-/*    height:70%;*/
+#bugModal .modal-full {
+    min-width: 90%;
+    /*    height:70%;*/
 }
 
-.modal-full .modal-content {
+#bugModal .modal-full .modal-content {
     /*height: 80%;*/
     color: white;
 }
@@ -1297,6 +1407,10 @@ section#services h2{
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#form-error{
+    display: none;
+}
+
 .contact .info {
     width: 100%;
     /* background: #fff; */

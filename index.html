@@ -15,7 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Vendor CSS Files -->
   <link href="/Content/bootstrap.min.css" rel="stylesheet">
   <link href="/Content/icofont.min.css" rel="stylesheet">
@@ -45,19 +45,38 @@
 
         <nav class="nav-menu">
             <ul>
-                <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                <li class="active"><a href="#hero" id="hero-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
                 <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
                 <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
                 <li><a href="#services"><i class="bx bx-server"></i> <span>Skills</span></a></li>
-                <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                <li><a href="#resume" id="resume-link"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
                 <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
             </ul>
         </nav><!-- .nav-menu -->
 
     </header><!-- End Header -->
-
     <!-- MODALS -->
 
+    <!-- MESSAGE SENT MODAL -->
+    <div id="messageSentModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Sent!</h4>
+                    <p>Your message has been sent successfully.</p>
+                    <button id="message-modal-button" class="btn btn-success"><span>Continue</span> <i class="material-icons">&#xE5C8;</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT MODALS -->
 
     <div class="modal fade" tabindex="-1" role="dialog" id="bugModal">
         <div class="modal-dialog modal-dialog-centered modal-full" role="document">
@@ -122,7 +141,6 @@
 
 
     <!-- END MODALS -->
-
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -235,6 +253,8 @@
 			                        c-5.764,5.95-5.614,15.446,0.336,21.21c6.772,6.561,14.301,11.197,22.093,13.813V437c0,8.284,6.716,15,15,15s15-6.716,15-15
 			                        v-17.571c18.295-6.504,30-23.575,30-42.429C210,352.187,189.813,332,165,332z" />
 
+
+
 	                            </g>
                             </g>
                             <g>
@@ -253,6 +273,10 @@
 			                        c39.446,0,88.355-7.668,121-29.019V256z M482,166c0,18.348-47.137,45-121,45c-34.007,0-65.745-5.782-89.367-16.281
 			                        C252.737,186.322,241,175.317,241,166v-44.805C273.474,142.481,321.972,150,361,150c39.446,0,88.355-7.668,121-29.019V166z
 			                         M361,120c-73.276,0-120-26.255-120-45c0-18.803,46.857-45,120-45c73.863,0,121,26.652,121,45S434.863,120,361,120z" />
+
+
+
+
 
 
 
@@ -662,7 +686,7 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="" role="form" class="php-email-form" id="main-form">
+                        <form role="form" method="post" class="php-email-form" id="main-form">
                             <div class="form-row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -681,16 +705,14 @@
                                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                 <div class="validate"></div>
                             </div>
-                            <div class="mb-3">
-                                <div class="loading">Loading</div>
-                                <!--<div class="error-message"></div>-->
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="alert alert-danger" id="form-error">
+                                <strong>Sorry!</strong> There was an error sending your message.
                             </div>
-                            <div class="text-center"><button id="send-message" type="submit">Send Message</button></div>
-                            <!--<div class="text-center"><a class="custom-button" id="send-message" onclick="document.getElementById('main-form').submit();">Send Message</a></div>-->
-                        </form>
+                    <div class="text-center"><button id="send-message" type="submit">Send Message</button></div>
+                    <!--<div class="text-center"><a class="custom-button" id="send-message" onclick="document.getElementById('main-form').submit();">Send Message</a></div>-->
+                    </form>
 
-                    </div>
+                </div>
 
                 </div>
 
@@ -746,25 +768,34 @@
         emailjs.init('user_F2RlgKcLE75UV2NQOvxF3')
     </script>
     <script>
-        const btn = document.getElementById('send-message');
+        let btn = document.getElementById('send-message');
         const success = document.getElementsByClassName('sent-message');
+
+        $('#message-modal-button').click(function () {
+            console.log("here")
+            $('#messageSentModal').modal('hide');
+            document.getElementById('hero-link').click()
+        });
+
 
         document.getElementById('main-form')
             .addEventListener('submit', function (event) {
                 event.preventDefault();
 
-                btn.value = 'Sending...';
+                btn.innerHTML = "Sending...";
 
                 const serviceID = 'default_service';
                 const templateID = 'template_qx584p9';
 
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
-                        btn.value = 'Send Message';
-                        alert('Sent!');
+                        btn.innerHTML = "Send Message";
+                        $('#form-error').hide()
+                        $('#messageSentModal').modal('show');
                     }, (err) => {
-                        btn.value = 'Send Message';
-                        alert(JSON.stringify(err));
+                        btn.innerHTML = "Try Again";
+                        $('#form-error').show()
+                        alert(json.stringify(err));
                     });
             });
     </script>
