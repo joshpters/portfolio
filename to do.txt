@@ -2,12 +2,4 @@ TO DO
 
 https://stackoverflow.com/questions/17461682/calling-a-function-on-bootstrap-modal-open
 
->>> full form functionality
->>> ADD IN ACTUAL DETAILS
->>> ADD 2 OTHER MODALS
 >>> add title IN modals
-
->>> Remove Blue color on bottom buttons
->>> Change Send Message Styling
-
-
