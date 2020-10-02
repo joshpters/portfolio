@@ -104,6 +104,7 @@
     <Content Include="Fonts\model-view-controller.svg" />
     <Content Include="Fonts\pencil %281%29.svg" />
     <Content Include="Fonts\pencil.svg" />
+    <Content Include="Fonts\profile.svg" />
     <Content Include="Fonts\programming_blog.svg" />
     <Content Include="Fonts\stack.svg" />
     <Content Include="Fonts\stock.svg" />
