@@ -77,9 +77,9 @@ a.custom-button:hover {
 }
 
 .back-to-top:hover {
-  /*color: #fff;*/
-  /*background: #0678e3;*/
-  transition: background 0.2s ease-in-out;
+    color: #202529;
+    /*background: #0678e3;*/
+    transition: background 0.2s ease-in-out;
 }
 
 /*--------------------------------------------------------------
