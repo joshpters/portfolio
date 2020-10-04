@@ -98,6 +98,7 @@
     <Content Include="Fonts\database.svg" />
     <Content Include="Fonts\dollar.svg" />
     <Content Include="Fonts\front-end.svg" />
+    <Content Include="fizzbuzz.html" />
     <Content Include="Fonts\javascript.svg" />
     <Content Include="Fonts\magbug.svg" />
     <Content Include="Fonts\mobile-development.svg" />
@@ -114,6 +115,7 @@
     <Content Include="Images\hero-bg.jpg" />
     <Content Include="Fonts\html-coding.svg" />
     <Content Include="Images\horizontal-portrait.jpg" />
+    <Content Include="Images\ilya-pavlov-OqtafYT5kTw-unsplash.jpg" />
     <Content Include="Images\in-lieu-in-view-photography-F4vaoudq6oI-unsplash.jpg" />
     <Content Include="Images\owl.video.play.png" />
     <Content Include="Images\portfolio-1.jpg" />

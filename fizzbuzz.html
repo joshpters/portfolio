@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link href="/Content/style.css" rel="stylesheet">
+
+    <style>
+        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .bgimg {
+            /* Background image */
+            background-image: url('/Images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+            /* Full-screen */
+            height: 100%;
+            /* Center the background image */
+            background-position: center;
+            /* Scale and zoom in the image */
+            background-size: cover;
+            /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+            position: relative;
+            /* Add a white text color to all elements inside the .bgimg container */
+            color: white;
+            /* Add a font */
+            font-family: "Courier New", Courier, monospace;
+            /* Set the font-size to 25 pixels */
+            font-size: 25px;
+        }
+
+            .bgimg:before {
+                content: "";
+                background: rgba(25, 28, 23, 0.8);
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+        /* Position text in the top-left corner */
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+
+        /* Position text in the bottom-left corner */
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+
+        /* Position text in the middle */
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Style the <hr> element */
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+
+        a.custom-button {
+            font-size: 14px;
+            padding: 12px 30px;
+            border: 1px solid #fcd088;
+            color: #fcd088;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background-color: transparent;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+            a.custom-button:hover {
+                border: 1px solid #fcd088;
+                color: #202529;
+                background-color: #fcd088;
+                text-decoration: none;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="bgimg">
+        <div class="topleft">
+            <p class="challenge">FizzBuzz</p>
+        </div>
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <br />
+            <span class="challenge">FizzBuzz</span>
+            <span> Challenge Page</span>
+            <br />
+            <br />
+            <a href="/index.html#challenges" class="custom-button">< Back</a>
+        </div>
+        <!--<div class="bottomleft">
+            <p>Some text</p>
+        </div>-->
+    </div>
+</body>
+
+<script>
+    const queryString = window.location.search;
+    console.log(queryString);
+
+    const urlParams = new URLSearchParams(queryString);
+    const challenge = urlParams.get('challenge')
+
+    var elems = document.getElementsByClassName("challenge");
+    for (i = 0; i < elems.length; i++) {
+        elems[i].innerHTML = challenge;
+    }
+</script>
+
+</html>
