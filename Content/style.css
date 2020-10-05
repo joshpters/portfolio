@@ -835,11 +835,18 @@ section#portfolio ul {
 
 .portfolio-wrap {
     /*transform: rotate(-5deg) skew(5deg) scale(1);*/
-    min-height: 300px;
+    /*min-height: 300px;*/
     /*max-width:250px;
     fill: white;*/
     color: #fcd088;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom:20px;
 }
+
 
 .portfolio-wrap svg {
     /*filter: drop-shadow(-20px 20px 20px grey);*/
@@ -849,7 +856,7 @@ section#portfolio ul {
     width: 60%;
     height: 60%;
     margin: auto;
-    display: block;
+/*    display: block;*/
     max-width: 250px;
     max-height: 250px;
 }
