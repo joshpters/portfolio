@@ -109,6 +109,7 @@
     <Content Include="Fonts\programming_blog.svg" />
     <Content Include="Fonts\stack.svg" />
     <Content Include="Fonts\stock.svg" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\apple-touch-icon.png" />
     <Content Include="Images\DSC03546.JPG" />
